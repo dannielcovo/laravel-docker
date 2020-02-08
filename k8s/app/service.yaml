@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: app-service
+spec:
+ #podemos trabalhar tbm c om cluster IP ou dessa forma com node port
+  type: NodePort
+  ports:
+    - protocol: TCP
+      port: 9000
+      nodePort: 30080
+  selector:
+    app: app
