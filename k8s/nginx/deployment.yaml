@@ -20,7 +20,7 @@ spec:
           name: nginx-conf
           readOnly: true
 
-#criacao volum
+#criacao volume
       volumes:
       - name: nginx-conf
         configMap:
